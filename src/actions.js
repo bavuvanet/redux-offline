@@ -6,6 +6,7 @@ import {
 } from './constants';
 
 export const networkStatusChanged = params => {
+  console.log('networkStatusChanged', params);
   let payload;
   if (typeof params === 'object') {
     payload = params;
