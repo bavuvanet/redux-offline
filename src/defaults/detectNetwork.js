@@ -1,6 +1,7 @@
 /* global window */
 
 const handle = (callback, online) => {
+  console.log(`online = ${online}`);
   // NetInfo is not supported in browsers, hence we only pass online status
   if (window.requestAnimationFrame) {
     window.requestAnimationFrame(() => callback({ online }));
